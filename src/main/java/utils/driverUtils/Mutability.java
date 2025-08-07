@@ -17,7 +17,7 @@ public class Mutability {
     }
 
     private static String headlessProperty = System.getProperty("headless", getPropertyValue("headless"));
-    private static boolean headless = Boolean.getBoolean(headlessProperty);
+    private static boolean headless = Boolean.parseBoolean(headlessProperty);
 
     public static MutableCapabilities getCapabilities(String browser) {
         switch (browser.toLowerCase()) {
