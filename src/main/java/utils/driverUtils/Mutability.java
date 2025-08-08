@@ -17,7 +17,7 @@ public class Mutability {
     }
 
     private static String headlessProperty = System.getProperty("headless", getPropertyValue("headless"));
-    private static boolean headless = Boolean.getBoolean(headlessProperty);
+    private static boolean headless = Boolean.parseBoolean(headlessProperty);
 
     public static MutableCapabilities getCapabilities(String browser) {
         switch (browser.toLowerCase()) {
@@ -35,7 +35,9 @@ public class Mutability {
         options.addArguments("--start-maximized");
         options.addArguments("--disable-popup-blocking");
         options.addArguments("--incognito");
-        if (headless) options.addArguments("--headless=new");
+        if ( headless) {
+            options.addArguments("--headless=new");
+        }
         return options;
     }
 
@@ -44,7 +46,9 @@ public class Mutability {
         options.addArguments("--start-maximized");
         options.addArguments("--disable-popup-blocking");
         options.addArguments("--inprivate");
-        if (headless) options.addArguments("--headless=new");
+        if (headless) {
+            options.addArguments("--headless=new");
+        }
         return options;
     }
 }
