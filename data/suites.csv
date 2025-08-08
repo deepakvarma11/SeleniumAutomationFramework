@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","1329","Add product to cart","Regression Suite","Fri Aug 08 12:42:44 UTC 2025","passed","Fri Aug 08 12:42:45 UTC 2025","tests.ProductTest","Regression Test","tests.ProductTest","addProductToCart"
-"","1062","Login with valid credentials","Regression Suite","Fri Aug 08 12:42:44 UTC 2025","passed","Fri Aug 08 12:42:45 UTC 2025","tests.LoginTest","Regression Test","tests.LoginTest","login_TC01"
-"","289","Login with invalid credentials","Regression Suite","Fri Aug 08 12:42:46 UTC 2025","passed","Fri Aug 08 12:42:46 UTC 2025","tests.LoginTest","Regression Test","tests.LoginTest","login_TC02"
+"","1078","Login with valid credentials","Regression Suite","Fri Aug 08 13:26:29 UTC 2025","passed","Fri Aug 08 13:26:30 UTC 2025","tests.LoginTest","Regression Test","tests.LoginTest","login_TC01"
+"","1419","Add product to cart","Regression Suite","Fri Aug 08 13:26:29 UTC 2025","passed","Fri Aug 08 13:26:31 UTC 2025","tests.ProductTest","Regression Test","tests.ProductTest","addProductToCart"
+"","319","Login with invalid credentials","Regression Suite","Fri Aug 08 13:26:31 UTC 2025","passed","Fri Aug 08 13:26:31 UTC 2025","tests.LoginTest","Regression Test","tests.LoginTest","login_TC02"
