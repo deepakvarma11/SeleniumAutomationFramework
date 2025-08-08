@@ -15,6 +15,8 @@ This project is a modular Selenium WebDriver automation framework using TestNG a
 - **Configurable:** Easily switch environments and logging levels via property files.
 - **Listeners:** Automated screenshot capture and reporting on test failures.
 - **Modular Structure:** Organized codebase for scalability and team collaboration.
+- **GitHub Actions Integration:** Automated CI/CD pipeline runs tests and generates Allure reports on every push or pull request.
+- **Allure Report on GitHub Pages:** Allure test reports are published to GitHub Pages for easy online access and sharing.
 
 ---
 
@@ -170,6 +172,17 @@ public byte[] captureFailureScreenshot(WebDriver driver) {
     </suite>
     ```
   - Adjust `thread-count` as needed for your environment.
+
+---
+
+## GitHub Actions & Allure Report on GitHub Pages
+
+- **CI/CD Integration:** The framework uses GitHub Actions to automatically run tests on every push or pull request. Tests are executed using Maven, and Allure results are generated.
+- **Allure Report Publishing:** After test execution, the Allure report is published to GitHub Pages, making it accessible online for easy sharing and review.
+- **How it works:**
+  - Workflow runs tests and generates Allure results in `target/allure-results`.
+  - Allure report is built and deployed to the `gh-pages` branch using GitHub Actions.
+  - The report is available at `https://<your-github-username>.github.io/<your-repo-name>/`.
 
 ---
 
